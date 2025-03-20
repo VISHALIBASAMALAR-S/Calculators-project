@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>Gram To Pavan Calculator</title>
+        <style>
+            body{
+                text-align: justify;
+                display:flex ;
+                flex-direction:column ;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+            }
+            .calculator{
+                display:flex ;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                flex-direction:column ;
+                padding: 10px;
+                border: 1px solid gray;
+                box-sizing: border-box;
+                border-radius: 20px;
+                width: 400px;
+                height: 300px;
+                position:relative;
+            }
+            h1{
+                
+                background: linear-gradient(rgb(243, 29, 179),rgb(197, 59, 231));
+                color: transparent;
+                background-clip: text;
+            }
+            label{
+                font-size: 20px;
+            }
+            h3{
+                color: crimson;
+                text-align: center;
+            }
+            input{
+                width: 200px;
+                height: 30px;
+            }
+            .convert{
+                width: 300px;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: rgb(243, 14, 109);
+                font-size: 20px;
+                color:white;
+            }
+            .content{
+                width: 900px;
+            }
+            .box{
+                border: 1px solid gray;
+                padding: 20px;
+                text-align: center;
+                background-color: rgb(247, 90, 122);
+            }
+            table,th,td{
+                border: 1px solid black;
+            }
+            table{
+                width: 700px;
+                border-collapse: collapse;
+            }
+            th,td{
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calculator">
+            <h1>Gram to Pavan calculator</h1>
+            <form>
+                <label for="grams"><b> Grams </b> </label>
+                <input type="text" id="grams" name="grams" required> <b> g</b> 
+                <br><br>
+                <button type="button" onclick="convertPavan()" class="convert">Convert Pavans</button> 
+                <br><br>
+                <button type="reset">Reset</button>
+            </form>
+            <h3 id="result"> </h3>
+        </div>
+        <script>
+            function convertPavan(){
+           var gram=document.getElementById('grams').value
+            pavan = gram /8
+
+            document.getElementById('result').innerText = 'Pavan = '+ pavan.toFixed(1) ;
+        }
+        </script>
+        <div class="content">
+        <h2 style="text-align: center;">What is a Pavan to Gram Converter?</h2>
+        <p>Pavan to Gram Converter is an online gold weight conversion tool that you can use to convert units from pavan to its equivalent in grams.</p>
+
+            <p>  Both pavan and grams are units of weight used to measure the gold weightage.</p>
+            
+            <p>  The pound unit which is also known as pawan savaran is a traditional unit of weight used mainly in southern India (mostly in Kerala and Tamil Nadu). This unit of weight is mainly used in gold industries to measure the weightage of gold.</p>
+            
+                <p>   Gram is a unit of mass in the International System of Units (SI) which is used all over the globe. People from all regions of the world use this unit to measure the weight of different items. It is commonly denoted using the <q>g</q> symbol.</p>
+            
+                    <p>  1 Pavan is equivalent to approximately 8 grams of gold.</p>
+
+            <div class="box"><b>1 Pavan = 8 Gram of Gold</b></div>
+            <h2 style="text-align: center;">How to Convert Pavan to Gram?</h2>
+            <p>1 pavan is equal to 7.98805 grams of gold, which is approximately equal to 8 grams of gold. So, for calculations and conversions, we use 1 Pavan = 8 Gram of Gold.</p>
+
+            <p>  Therefore, to convert units from pavan to gram, you'll need to multiply the pavan value by 8. This will give you the equivalent weight in grams.</p>
+            <div class="box"><b>Gram = Pavan x 8</b></div>
+           <h2 style="text-align: center;"> Solved Example</h2>
+            <p><b>Example:</b> Convert 50 pavan in grams.</p>
+
+            <p>Weight of gold (in pavan) = 50 pavan</p>
+
+            <p>Using the Gram = Pavan x 8 formula, we'll get:</p>
+
+            <p>Gram = Pavan x 8 = 50 x 8 = 400 g</p>
+
+            <p>Thus, 50 pavan is equivalent to 400 grams of gold.</p>
+            <h2 style="text-align: center;">Pavan to Gram Conversion Table</h2>
+            <table >
+                <tr>
+                    <th>Pavan</th>
+                    <th>Gram</th>
+                </tr>
+                <tr>
+                    <td>1 pavan</td>
+                    <td>8 g</td>
+                </tr>
+                <tr>
+                    <td>2 pavan</td>
+                    <td>16 g</td>
+                </tr>
+                <tr>
+                    <td>3 pavan</td>
+                    <td>24 g</td>
+                </tr>
+                <tr>
+                    <td>4 pavan</td>
+                    <td>32 g</td>
+                </tr>
+                <tr>
+                    <td>5 pavan</td>
+                    <td>40 g</td>
+                </tr>
+                <tr>
+                    <td>6 pavan</td>
+                    <td>48 g</td>
+                </tr>
+                <tr>
+                    <td>7 pavan</td>
+                    <td>56 g</td>
+                </tr>
+                <tr>
+                    <td>8 pavan</td>
+                    <td>64 g</td>
+                </tr>
+                <tr>
+                    <td>9 pavan</td>
+                    <td>72 g</td>
+                </tr>
+                <tr>
+                    <td>10 pavan</td>
+                    <td>80 g</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
